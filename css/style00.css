@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Style+Script&display=swap');
+
+body {
+    background-color: rgb(219, 245, 142);
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+}
+
+main#container {
+    font-family: 'Style Script', cursive;
+    background: white;
+    width: 770px;
+    border: 2px solid #cf9;
+    margin: 0 auto;
+    text-align: left
+}
+
+h1#header {
+    font-family: 'PT Sans', sans-serif;
+    height: 258px;
+    background: url(../img/apple.jpg) no-repeat left top;
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* la propriété display et la valeur block transforment le lien a inline en élément de type block on peut donc lui attribuer des propriétés de taille ; on positionne l'image de fond qui a les mêmes dimensions que le cadre ainsi créé */
+#header a {
+    background: url(../img/title.gif) no-repeat;
+    display: block;
+    position: relative;
+    left: 350px;
+    top: 15px;
+    width: 400px;
+    height: 70px;
+    text-indent: -4000px;
+    /* text-indent:- hide a text  */
+    /* le text-indent négatif est fait pour cacher le texte au visiteur (il est hors de la page) mais il est lu par les moteurs de recherche, il est décalé vers la gauche */
+}
+
+nav {
+    font-family: 'PT Sans', sans-serif;
+}
+
+footer {
+    height: 60px;
+    line-height: 60px;
+}
