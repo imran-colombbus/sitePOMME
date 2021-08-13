@@ -19,14 +19,13 @@ main#container {
 h1#header {
     font-family: 'PT Sans', sans-serif;
     height: 258px;
-    background: url(../img/apple.jpg) no-repeat left top;
+    background: url("../img/apple.jpg") no-repeat left top;
     margin: 0;
-    font-family: 'PT Sans', sans-serif;
 }
 
 /* la propriété display et la valeur block transforment le lien a inline en élément de type block on peut donc lui attribuer des propriétés de taille ; on positionne l'image de fond qui a les mêmes dimensions que le cadre ainsi créé */
 #header a {
-    background: url(../img/title.gif) no-repeat;
+    background: url("../img/title.gif") no-repeat;
     display: block;
     position: relative;
     left: 350px;
@@ -42,7 +41,86 @@ nav {
     font-family: 'PT Sans', sans-serif;
 }
 
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    background: url("../img/bg_menu.gif") repeat-x 0 -25px;
+    /* repeat-x: répétation horizontale axe abscisses  */
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    width: 130px;
+    line-height: 20px;
+    text-decoration: none;
+    color: aliceblue;
+    letter-spacing: 2px;
+    border-right: 2px solid #cf9;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    /* sur le :hover l'image se décale vers le bas  */
+    background: url("../img/bg_menu.gif") repeat-x 0 0;
+    color: rgb(86, 3, 124);
+}
+
+#principal {
+    background-image: url("../img/bg_page.gif");
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+    padding: 0 30px 0 100px;
+}
+
+h1, h2, h3 {
+    font-family: 'PT Sans', sans-serif;
+    font-style: italic;
+}
+
+#principal h2 {
+    padding-left: 25px;
+    background: url("../img/little_apple.gif") no-repeat left center;
+    color: #9b2;
+    font-size: 1.4em;
+    line-height: 25px;
+}
+
+#principal h3 {
+    margin-left: 15px;
+    padding-left: 5px;
+    color: rgb(110, 163, 2);
+    border-bottom: 1px solid #9b2;
+    border-left: 1px solid #9b2;
+}
+
+#principal p {
+    line-height: 1.7em;
+    text-align: justify;
+    /* text-indent: 2em; */
+}
+
+blockquote {
+    padding-left: 10px;
+    border-left: 5px solid #9b2;
+}
+
 footer {
-    height: 60px;
-    line-height: 60px;
+    background: rgb(82, 214, 5);
+    padding: 8px;
+}
+
+footer p {
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    text-align: center;
+    line-height: 20px;
+    color: whitesmoke;
 }
